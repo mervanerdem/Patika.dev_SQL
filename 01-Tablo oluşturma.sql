@@ -7,4 +7,12 @@
 	
 ); */
 
-SELECT * FROM author; --Tablo geldiğini kontrol ediyoruz.
+--SELECT * FROM author; --Tablo geldiğini kontrol ediyoruz.
+
+INSERT INTO author (first_name,last_name,email,birthday) --id yazmaya gerek yok kendisi otomatik artmakta.
+VALUES
+	('Mervan','Erdem','mrvnerdem@gmail.com','1998-01-01'),	--Burda verileri yukarda yazılan sıra ile eklemek gerekir. 
+	('Sabahattin','Ali','sabahattin@ali.com','1914-07-11'),	--Tarihler yıl-ay-gün şeklinde yazılır.
+	('Orhan','Pamuk','orhan@pamuk.com','1950-04-14'),
+	('Halide Edip','Adıvar','halideedip@adivar.com','1884-07-11'),
+	('Haruki','Murakami','haruki@murakami.com','1948-11-07');
