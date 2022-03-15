@@ -18,4 +18,9 @@ VALUES
 	('Haruki','Murakami','haruki@murakami.com','1948-11-07'); 
 */
 
-CREATE TABLE author2 (LIKE author); -- author tablosunun şablonunu kopyalayarak oluşturulan tablo(verileri kopyalamaz.)
+--CREATE TABLE author2 (LIKE author); -- author tablosunun şablonunu kopyalayarak oluşturulan tablo(verileri kopyalamaz.)
+
+INSERT INTO author2 --author 2 tablosuna
+SELECT *    --tüm satırlar olacak şekilde
+FROM author --author tablosundan 
+WHERE first_name = 'Mervan';    --Mervan isminde olan satırları kopyalar.
