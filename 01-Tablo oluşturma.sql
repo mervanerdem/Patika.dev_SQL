@@ -34,4 +34,8 @@ FROM author;    --authordan.
 --Yani author tablosunun tamamını author3 diye yeni oluşturulacak tabloya kopyalar.
 */
 
-DROP TABLE IF EXISTS author4; --Eğer tablo varsa sil, böyle bir tablomuz olmadığından "Tablo yok geçildi." uyarısı verildi.
+--DROP TABLE IF EXISTS author4; --Eğer tablo varsa sil, böyle bir tablomuz olmadığından "Tablo yok geçildi." uyarısı verildi.
+
+DROP TABLE IF EXISTS author3; --Bu şekilde author3 tablosunu siler.
+
+DROP TABLE author2; --Bu şekilde var olduğunu bildiğimiz bir tabloyu da silebiliriz.
