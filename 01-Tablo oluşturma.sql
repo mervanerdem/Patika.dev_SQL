@@ -20,7 +20,13 @@ VALUES
 
 --CREATE TABLE author2 (LIKE author); -- author tablosunun şablonunu kopyalayarak oluşturulan tablo(verileri kopyalamaz.)
 
+/* 
 INSERT INTO author2 --author 2 tablosuna
 SELECT *    --tüm satırlar olacak şekilde
 FROM author --author tablosundan 
-WHERE first_name = 'Mervan';    --Mervan isminde olan satırları kopyalar.
+WHERE first_name = 'Mervan';    --Mervan isminde olan satırları kopyalar. 
+*/
+CREATE TABLE author3 AS --tablo oluşturma
+SELECT *    -- tüm satırları alcaak şekilde
+FROM author;    --authordan.
+--Yani author tablosunun tamamını author3 diye yeni oluşturulacak tabloya kopyalar.
