@@ -70,9 +70,15 @@ insert into employee (id, name, birthday, email) values (50, 'Penny Mattosoff', 
  /*
 3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
 */
-
+/*
 UPDATE employee   
 SET		name = 'Update'    --Belirlenen satırın sadece name sütununu güncelle
 WHERE id > 45 --Sadece ilk ismi Barnie olan satırı değiştir
 RETURNING *;    --Yapılan değişikliğin tamamını (* sayesinde) göster.
-
+*/
+/*
+4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+*/
+ DELETE FROM employee
+ WHERE name = 'Update'  --id adresi 25den büyük olan verileri sil
+ RETURNING *;   --Silinen verileri göster.
