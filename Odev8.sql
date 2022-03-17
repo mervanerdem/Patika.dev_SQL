@@ -65,5 +65,14 @@ insert into employee (id, name, birthday, email) values (47, 'Carlyle Kohter', '
 insert into employee (id, name, birthday, email) values (48, 'Joby Heiden', '1942-04-25', 'jheiden1b@vk.com');
 insert into employee (id, name, birthday, email) values (49, 'Jennifer Hampe', '1995-05-24', 'jhampe1c@state.tx.us');
 insert into employee (id, name, birthday, email) values (50, 'Penny Mattosoff', '1937-12-08', 'pmattosoff1d@blinklist.com');
-
 */
+
+ /*
+3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+*/
+
+UPDATE employee   
+SET		name = 'Update'    --Belirlenen satırın sadece name sütununu güncelle
+WHERE id > 45 --Sadece ilk ismi Barnie olan satırı değiştir
+RETURNING *;    --Yapılan değişikliğin tamamını (* sayesinde) göster.
+
