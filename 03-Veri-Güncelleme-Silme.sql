@@ -11,6 +11,11 @@ SET		last_name = 'Update'    --Belirlenen satırın sadece last_name sütununu g
 WHERE first_name = 'Barnie' --Sadece ilk ismi Barnie olan satırı değiştir
 RETURNING *;    --Yapılan değişikliğin tamamını (* sayesinde) göster.
  */
- 
+/* 
 DELETE FROM author	--sileceğimiz tabloyu seçiyoruz.
 WHERE id = '7';	--Tablonun neresinden
+ */
+
+ DELETE FROM author
+ WHERE id > 25  --id adresi 25den büyük olan verileri sil
+ RETURNING *;   --Silinen verileri göster.
