@@ -110,3 +110,7 @@ insert into book (title, page_number, author_id) values ('Felon', 469, 23);
 insert into book (title, page_number, author_id) values ('Living Desert, The', 391, 5);
 
 
+--Mervan adındaki yazarın kitaplarını görmek istediğimiz zaman author_id 1 olduğundan 
+SELECT *
+FROM book
+WHERE author_id =1; --yazar id'si 1 olanları listelemiş oluyoruz.
