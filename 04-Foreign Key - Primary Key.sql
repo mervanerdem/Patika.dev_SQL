@@ -114,3 +114,10 @@ insert into book (title, page_number, author_id) values ('Living Desert, The', 3
 SELECT *
 FROM book
 WHERE author_id =1; --yazar id'si 1 olanları listelemiş oluyoruz.
+
+--Yazarı da aynı tabloda görmek istersek
+
+SELECT *
+FROM book
+JOIN author ON author.id = book.author_id; --author tablosundan id sütunu ile book tablosundan author_id sütunu birleştiriliyor.
+
