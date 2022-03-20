@@ -10,3 +10,18 @@ VALUES
     1.123456789123456789123,
     1.123456789123456789123
     );
+
+------------------------------------------------------------
+
+CREATE TABLE test2(
+    float4_type FLOAT4, --Real ile aynı
+    float8_type FLOAT8, --Double Precision ile aynı
+    decimal_type DECIMAL --Numeric ile aynı   
+);
+
+INSERT INTO test2
+VALUES 
+    (1.123456789123456789123,
+    1.123456789123456789123,
+    1.123456789123456789123
+    );
